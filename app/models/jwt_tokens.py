@@ -12,7 +12,7 @@ class JwtToken(Base):
     device_id: Mapped[int] = mapped_column(BigInteger, ForeignKey('deelflow_devices.id', ondelete='CASCADE'), nullable=False)
     access_jti: Mapped[str] = mapped_column(String(256), nullable=False)
     refresh_jti: Mapped[str] = mapped_column(String(256), nullable=False)
-    device_ip: Mapped[str | None] = mapped_column(String(45), nullable=True)
+    device_ip: Mapped[Optional[str]] = mapped_column(String(45), nullable=True)
     revoked: Mapped[bool] = mapped_column(Boolean, default=False)
     created_at: Mapped[TIMESTAMP] = mapped_column(TIMESTAMP, server_default=func.now(), nullable=False)
     expires_at: Mapped[TIMESTAMP] = mapped_column(TIMESTAMP, onupdate=func.now(), nullable=True)
