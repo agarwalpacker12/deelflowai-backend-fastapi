@@ -44,7 +44,7 @@ class UserCreate(BaseModel):
     points: int = 0
     is_verified: bool = False
     is_active: bool = True
-    stripe_customer_id: str | None = None
+    stripe_customer_id: Optional[str] = None
     password: str = Field(..., min_length=6)
     organization: OrganizationCreate
 
