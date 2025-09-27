@@ -3,6 +3,7 @@ from sqlalchemy import Column, String, BigInteger, ForeignKey, Enum, TIMESTAMP, 
 from sqlalchemy.orm import Mapped
 from app.config.db_connection import Base
 from typing import Any
+from typing import Optional
 
 class JwtToken(Base):
     __tablename__ = 'deelflow_jwt_tokens'
