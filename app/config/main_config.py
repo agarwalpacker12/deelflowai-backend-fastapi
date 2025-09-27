@@ -20,7 +20,7 @@ class Config:
     # for staging
     DB_HOST = 'localhost'
     DB_USER = 'postgres'
-    DB_PASS = 'postgres'
+    DB_PASS = 'Awhpr148'
     DB_NAME = 'deelflow_db'
     DB_PORT = '5432'
     
