@@ -50,7 +50,7 @@ numpy==1.24.4
 oauthlib==3.2.2
 openai==1.83.0
 packaging==24.2
-pandas==2.2.3
+pandas==2.0.3
 passlib==1.7.4
 phonenumbers==9.0.5
 pillow==11.0.0
