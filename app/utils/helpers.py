@@ -29,6 +29,7 @@ from fastapi.templating import Jinja2Templates
 from user_agents import parse
 import math
 # import fitz
+from typing import Optional
 
 from app.models.jwt_tokens import JwtToken
 
@@ -90,7 +91,7 @@ async def send_email_async(
     to,
     subject,
     body,
-    display_name: str | None = None,
+    display_name: Optional[str] = None,
     attachment: str | None = None,
     attachment_filename="document.pdf",
     sender_email: str | None = None,
