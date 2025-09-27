@@ -46,7 +46,7 @@ jiter==0.9.0
 jmespath==1.0.1
 lxml==5.3.1
 MarkupSafe==2.1.5
-numpy==2.2.1
+numpy==1.24.4
 oauthlib==3.2.2
 openai==1.83.0
 packaging==24.2
