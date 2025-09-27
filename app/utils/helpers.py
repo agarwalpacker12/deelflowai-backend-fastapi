@@ -92,13 +92,13 @@ async def send_email_async(
     subject,
     body,
     display_name: Optional[str] = None,
-    attachment: str | None = None,
+    attachment: Optional[str] = None,
     attachment_filename="document.pdf",
-    sender_email: str | None = None,
-    mail_host: str | None = None,
-    mail_port: int | None = None,
-    mail_username: str | None = None,
-    mail_password: str | None = None,
+    sender_email: Optional[str] = None,
+    mail_host: Optional[str] = None,
+    mail_port: Optional[int] = None,
+    mail_username: Optional[str] = None,
+    mail_password: Optional[str] = None,
 ):
     """
     Sends an email asynchronously using aiosmtplib.
